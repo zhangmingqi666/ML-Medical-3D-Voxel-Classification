@@ -188,7 +188,7 @@ output1.to_csv('Output1.csv')
 output2.to_csv('Output2.csv')
 score1 = pd.read_csv('Output1.csv')['1']
 score2 = pd.read_csv('Output2.csv')['1']
-score = 0.65 * score1 + 0.35 * score2
+score = 0.66 * score1 + 0.34 * score2
 output = pd.read_csv('sampleSubmission.csv')
 output['predicted'] = score
 output.to_csv('Submission.csv', columns=['name', 'predicted'], index=False)   # 最终结果输出到Submission.csv中（若不存在将会被创建）
